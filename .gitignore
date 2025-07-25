@@ -10,17 +10,19 @@ lerna-debug.log*
 # Node modules
 node_modules/
 
-# Tailwind CSS build output (if you're compiling to this file)
-src/tailwind.css
+# Tailwind CSS build output
+src/output.css  # You're using CLI to build this file manually
 
 # Vite build output
 dist/
 dist-ssr/
 
-# Local env files and settings
+# Env files
 *.local
+.env
+.env.*
 
-# IDE/editor folders
+# Editor/IDE settings
 .vscode/
 !.vscode/extensions.json
 .idea/
@@ -30,8 +32,7 @@ dist-ssr/
 *.sln
 *.sw?
 
-# macOS system files
-.DS_Store
-
-# Linux trash folder
-.Trash-*
+# OS system files
+.DS_Store        # macOS
+.Trash-*         # Linux
+Thumbs.db        # Windows
