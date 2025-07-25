@@ -1,12 +1,93 @@
-# React + Vite
+# React + Vite + Tailwind CSS (CLI)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project provides a minimal and clean setup for building React applications using Vite, with Tailwind CSS integrated via the CLI (not the Vite plugin). ESLint is included to enforce basic code quality.
 
-Currently, two official plugins are available:
+## ✅ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- Vite for fast development
+- Tailwind CSS via CLI (with `input.css` and `output.css`)
+- ESLint setup
+- Framer Motion & React Scroll for animation and smooth scrolling
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Project Structure
+
+react-app/
+├── src/
+│ ├── App.jsx
+│ ├── main.jsx
+│ ├── input.css # Tailwind source file
+│ ├── output.css # Generated file (ignored in Git)
+├── tailwind.config.js # Tailwind configuration
+├── vite.config.js # Vite configuration
+├── .gitignore
+├── package.json
+└── README.md
+
+yaml
+Copy
+Edit
+
+---
+
+## 📦 Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+Development
+Option 1: Use two terminals
+bash
+Copy
+Edit
+# Terminal 1: Watch Tailwind CSS changes
+npm run dev-css
+
+# Terminal 2: Run Vite dev server
+npm run dev
+Option 2: Use one terminal (recommended)
+bash
+Copy
+Edit
+npm run dev:full   # Uses concurrently to run both dev and dev-css
+Make sure to install concurrently with:
+npm install -D concurrently
+
+🏗 Build for Production
+bash
+Copy
+Edit
+npm run build
+🧹 Lint Your Code
+bash
+Copy
+Edit
+npm run lint
+📌 Notes
+src/output.css is generated and should not be edited manually.
+
+.gitignore is configured to exclude unnecessary files (e.g. node_modules, dist, output.css).
+
+Tailwind is compiled via CLI for full manual control — great for learning or debugging.
+
+If you plan to scale this project, consider switching to the official Vite plugin and TypeScript.
+
+📄 License
+MIT — Free to use and modify.
+
+yaml
+Copy
+Edit
+
+---
+
+### ✅ After Pasting:
+1. Save this as `README.md` in your project root.
+2. Stage and commit it:
+   ```bash
+   git add README.md
+   git commit -m "Add custom README for React + Vite + Tailwind CLI setup"
+   git push origin main
