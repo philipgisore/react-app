@@ -26,10 +26,6 @@ react-app/
 ├── package.json
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 📦 Getting Started
@@ -41,8 +37,6 @@ npm install
 Development
 Option 1: Use two terminals
 bash
-Copy
-Edit
 # Terminal 1: Watch Tailwind CSS changes
 npm run dev-css
 
@@ -50,22 +44,18 @@ npm run dev-css
 npm run dev
 Option 2: Use one terminal (recommended)
 bash
-Copy
-Edit
 npm run dev:full   # Uses concurrently to run both dev and dev-css
 Make sure to install concurrently with:
 npm install -D concurrently
 
 🏗 Build for Production
 bash
-Copy
-Edit
 npm run build
+
 🧹 Lint Your Code
 bash
-Copy
-Edit
 npm run lint
+
 📌 Notes
 src/output.css is generated and should not be edited manually.
 
@@ -78,16 +68,3 @@ If you plan to scale this project, consider switching to the official Vite plugi
 📄 License
 MIT — Free to use and modify.
 
-yaml
-Copy
-Edit
-
----
-
-### ✅ After Pasting:
-1. Save this as `README.md` in your project root.
-2. Stage and commit it:
-   ```bash
-   git add README.md
-   git commit -m "Add custom README for React + Vite + Tailwind CLI setup"
-   git push origin main
